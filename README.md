@@ -1,22 +1,22 @@
-Bank Customer Churn Prediction
+# Bank Customer Churn Prediction
 
-Loyiha haqida
+# About the Project:
 
-Ushbu loyiha bank mijozlarining ketish (churn) ehtimolini bashorat qilishga qaratilgan. Ma'lumotlar to'plami bank mijozlarining turli xususiyatlarini (masalan, kredit reytingi, yosh, balans, mahsulotlar soni va boshqalar) o'z ichiga oladi va maqsad mijozning bankni tark etish ehtimolini (0 yoki 1) aniqlashdir. Ushbu loyihada CatBoost algoritmidan foydalanib, yuqori aniqlikdagi bashorat modelini yaratishga erishildi.
+This project aims to predict the likelihood of bank customers churning. The dataset includes various customer attributes (e.g., credit score, age, balance, number of products, etc.), and the goal is to determine the probability of a customer leaving the bank (0 or 1). By utilizing the CatBoost algorithm, this project achieves a high-accuracy prediction model.
 
-Loyiha tarkibi
 
-customer-churn-pred.ipynb: Loyiha uchun Jupyter Notebook fayli. 
-Unda quyidagilar mavjud:
+# Project Structure:
 
-Ma'lumotlarni yuklash va tahlil qilish.
+customer-churn-pred.ipynb: The Jupyter Notebook file for the project, which includes:
 
-Ma'lumotlarni oldindan ishlov berish (keraksiz ustunlarni olib tashlash, kategorik o'zgaruvchilarni boshqarish).
+Data loading and analysis.
 
-CatBoostClassifier yordamida modelni o'qitish va baholash.
+Data preprocessing (removing unnecessary columns, handling categorical variables).
 
-Xususiyatlarning ahamiyatini tahlil qilinadi.
+Training and evaluating the model using CatBoostClassifier.
 
-Test ma'lumotlari uchun bashoratlar va submission faylini yaratish.
+Analyzing feature importance.
 
-submission.csv: Test ma'lumotlari uchun bashorat qilingan natijalar.
+Generating predictions for the test data and creating a submission file.
+
+submission.csv: The file containing the predicted results for the test data.
